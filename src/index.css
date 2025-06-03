@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@utility container{
+    margin:0 auto;
+}
+
+@theme{
+    --color-primaryColor: # ;
+    --color-secondaryColor: # ;
+    --color-brandColor: # ;
+    --color-lightBrandColor: # ;
+
+    --font-pixelFont:  "Pixelify Sans", sans-serif;
+    
+}
