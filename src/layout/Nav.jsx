@@ -1,11 +1,15 @@
-import React from 'react'
+import React from "react";
 
 const Nav = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <>
+      <nav className="px-2">
+        <div>
+          
+        </div>
+      </nav>
+    </>
+  );
+};
 
-export default Nav
+export default Nav;
