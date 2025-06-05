@@ -15,7 +15,7 @@ const Nav = () => {
           </div>
           {/* lg:gap-12 xl:gap-20 */}
           <div className="hidden md:block">
-            <ul className="flex items-center md:gap-2 ">
+            <ul className="flex items-center md:gap-4 lg:gap-6 xl:gap-10 ">
               <li className=" cursor pointer">
                 <Link
                   to="/"
@@ -34,7 +34,7 @@ const Nav = () => {
               </li>
               <li>
                 <Link
-                  to="#"
+                  to="/service"
                   className=" nav-li-css h-full text-[20px] px-4  text-white font-pixelFont md:text-[23px] lg:text-[30px] transition-all hover:text-black "
                 >
                   services
@@ -42,15 +42,15 @@ const Nav = () => {
               </li>
               <li>
                 <Link
-                  to="#"
+                  to="/projects"
                   className=" nav-li-css h-full text-[20px] px-4  text-white font-pixelFont md:text-[23px] lg:text-[30px] transition-all hover:text-black "
                 >
-                  project
+                  demo
                 </Link>
               </li>
               <li>
                 <Link
-                  to="#"
+                  to="/contact"
                   className=" text-[20px] h-full px-2 text-white font-pixelFont bg-lightBrandColor hover:text-black md:text-[23px] lg:text-[30px]"
                 >
                   contact
@@ -72,7 +72,7 @@ const Nav = () => {
           <ul className="mt-4 space-y-4">
             <li>
               <Link
-                to="#"
+                to="/"
                 className=" block px-4 py-2 text-[30px] w-full text-white font-pixelFont bg-primaryColor rounded nav-custom-shadow active:bg-lightBrandColor"
               >
                 home
@@ -80,7 +80,7 @@ const Nav = () => {
             </li>
             <li>
               <Link
-                to="#"
+                to="/about"
                 className="block px-4 py-2 text-[30px] w-full text-white font-pixelFont bg-primaryColor rounded nav-custom-shadow active:bg-lightBrandColor"
               >
                 about
@@ -88,7 +88,7 @@ const Nav = () => {
             </li>
             <li>
               <Link
-                to="#"
+                to="/service"
                 className="block px-4 py-2 text-[30px] w-full text-white font-pixelFont bg-primaryColor rounded nav-custom-shadow active:bg-lightBrandColor"
               >
                 services
@@ -96,7 +96,7 @@ const Nav = () => {
             </li>
             <li>
               <Link
-                to="#"
+                to="/projects"
                 className="block px-4 py-2 text-[30px] w-full text-white font-pixelFont bg-primaryColor rounded nav-custom-shadow active:bg-lightBrandColor"
               >
                 demo
@@ -104,7 +104,7 @@ const Nav = () => {
             </li>
             <li>
               <Link
-                to="#"
+                to="/contact"
                 className="bg-red-600 block w-full px-4 py-2 text-[30px] font-pixelFont text-white  rounded  active:bg-primaryColor transition-all hover:text-black "
               >
                 contact
