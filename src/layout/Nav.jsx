@@ -69,7 +69,7 @@ const Nav = () => {
         </div>
 
         <div className={`mobile-menu ${menuOpen ? "" : "hidden"} md:hidden`}>
-          <ul className="mt-4 space-y-4">
+          <ul className="h-dvh mt-4 space-y-4">
             <li>
               <Link
                 to="/"
