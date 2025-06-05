@@ -59,7 +59,7 @@ const Nav = () => {
             <li>
               <Link
                 to="#"
-                className="block px-4 py-2 text-white font-pixelFont bg-primaryColor rounded nav-custom-shadow"
+                className="block px-4 py-2 text-[30px] text-white font-pixelFont bg-primaryColor rounded nav-custom-shadow"
               >
                 home
               </Link>
@@ -67,7 +67,7 @@ const Nav = () => {
             <li>
               <Link
                 to="#"
-                className="block px-4 py-2 text-white font-pixelFont bg-primaryColor rounded nav-custom-shadow"
+                className="block px-4 py-2 text-[30px] text-white font-pixelFont bg-primaryColor rounded nav-custom-shadow"
               >
                 about
               </Link>
@@ -75,7 +75,7 @@ const Nav = () => {
             <li>
               <Link
                 to="#"
-                className="block px-4 py-2 text-white font-pixelFont bg-primaryColor rounded nav-custom-shadow"
+                className="block px-4 py-2 text-[30px] text-white font-pixelFont bg-primaryColor rounded nav-custom-shadow"
               >
                 services
               </Link>
@@ -83,7 +83,7 @@ const Nav = () => {
             <li>
               <Link
                 to="#"
-                className="block px-4 py-2 text-white font-pixelFont bg-primaryColor rounded nav-custom-shadow"
+                className="block px-4 py-2 text-[30px] text-white font-pixelFont bg-primaryColor rounded nav-custom-shadow"
               >
                 demo
               </Link>
@@ -91,7 +91,7 @@ const Nav = () => {
             <li>
               <Link
                 to="#"
-                className="bg-red-600 block px-4 py-2 font-pixelFont text-white  rounded  "
+                className="bg-red-600 block px-4 py-2 text-[30px] font-pixelFont text-white  rounded  "
               >
                 contact
               </Link>
