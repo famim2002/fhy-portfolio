@@ -13,7 +13,7 @@ const Nav = () => {
           <div className="text-white font-bold text-xl">
             <a href="#">Logo</a>
           </div>
-          {/* lg:gap-12 xl:gap-20 */}
+        
           <div className="hidden md:block">
             <ul className="flex items-center md:gap-4 lg:gap-6 xl:gap-10 ">
               <li className=" cursor pointer">
