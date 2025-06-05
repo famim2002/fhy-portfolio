@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
+import { PiDotsThreeOutlineFill } from "react-icons/pi";
+import { Link } from "react-router"
+
 
 const Nav = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <>
       <nav className=" mx-auto px-6 py-3">
@@ -12,64 +17,84 @@ const Nav = () => {
           <div className="hidden md:block">
             <ul className="flex items-center space-x-8">
               <li>
-                <a href="#" className=" text-[20px] text-white">
-                  Home
-                </a>
+                <Link to="#" className=" text-[20px] text-white font-pixelFont">
+                  home
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-white">
-                  About
-                </a>
+                <Link to="#" className=" text-[20px] text-white font-pixelFont">
+                  about
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-white">
-                  Services
-                </a>
+                <Link to="#" className=" text-[20px] text-white font-pixelFont">
+                  services
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-white">
-                  Contact
-                </a>
+                <Link to="#" className=" text-[20px] text-white font-pixelFont">
+                  project
+                </Link>
+              </li>
+              <li>
+                <Link to="#" className="bg-red-600 text-[20px] text-white font-pixelFont">
+                  contact
+                </Link>
               </li>
             </ul>
           </div>
+
           <div className="md:hidden">
-            <button className="outline-none mobile-menu-button"></button>
+            <button
+              className="cursor-pointer outline-none mobile-menu-button"
+              onClick={() => setMenuOpen(!menuOpen)}
+            >
+              <PiDotsThreeOutlineFill className="text-[35px] text-white" />
+            </button>
           </div>
         </div>
-        <div className="mobile-menu hidden md:hidden">
+
+        <div className={`mobile-menu ${menuOpen ? "" : "hidden"} md:hidden`}>
           <ul className="mt-4 space-y-4">
             <li>
-              <a
-                href="#"
-                className="block px-4 py-2 text-white bg-gray-900 rounded"
+              <Link
+                to="#"
+                className="block px-4 py-2 text-white font-pixelFont bg-primaryColor rounded nav-custom-shadow"
               >
-                Home
-              </a>
+                home
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
-                className="block px-4 py-2 text-white bg-gray-900 rounded"
+              <Link
+                to="#"
+                className="block px-4 py-2 text-white font-pixelFont bg-primaryColor rounded nav-custom-shadow"
               >
-                About
-              </a>
+                about
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
-                className="block px-4 py-2 text-white bg-gray-900 rounded"
+              <Link
+                to="#"
+                className="block px-4 py-2 text-white font-pixelFont bg-primaryColor rounded nav-custom-shadow"
               >
-                Services
-              </a>
+                services
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
-                className="block px-4 py-2 text-white bg-gray-900 rounded"
+              <Link
+                to="#"
+                className="block px-4 py-2 text-white font-pixelFont bg-primaryColor rounded nav-custom-shadow"
               >
-                Contact
-              </a>
+                demo
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="#"
+                className="bg-red-600 block px-4 py-2 font-pixelFont text-white  rounded  "
+              >
+                contact
+              </Link>
             </li>
           </ul>
         </div>

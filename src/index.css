@@ -5,18 +5,23 @@
 }
 
 @theme {
-  --color-primaryColor: #181616;
+  --color-primaryColor: #0f0e0e;
   --color-secondaryColor: #f2f2f2;
   --color-brandColor: #b31312;
   --color-lightBrandColor: #fe0000;
 
-  --font-pixelFont: ;
+  --font-pixelFont:  "Pixelify Sans", sans-serif;
 }
 
 .con {
-  color: #181616;
+  color: #0f0e0e;
 }
 
 body {
   background-color: #000000;
+}
+
+
+.nav-custom-shadow{
+  box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 2px 0prgba(242, 242, 242, 0.15)15) 0px 1px 3px 1px;
 }
