@@ -13,37 +13,51 @@ const Nav = () => {
           <div className="text-white font-bold text-xl">
             <a href="#">Logo</a>
           </div>
-
+          {/* lg:gap-12 xl:gap-20 */}
           <div className="hidden md:block">
-            <ul className="flex items-center space-x-8">
-              <li>
-                <Link to="#" className=" text-[20px] text-white font-pixelFont">
+            <ul className="flex items-center md:gap-2 ">
+              <li className=" cursor pointer">
+                <Link
+                  to="/"
+                  className="nav-li-css h-full text-[20px] px-4 text-white font-pixelFont md:text-[23px] lg:text-[30px] transition-all hover:text-black "
+                >
                   home
                 </Link>
               </li>
               <li>
-                <Link to="#" className=" text-[20px] text-white font-pixelFont">
+                <Link
+                  to="/about"
+                  className=" nav-li-css h-full text-[20px] px-4  text-white font-pixelFont md:text-[23px] lg:text-[30px] transition-all hover:text-black "
+                >
                   about
                 </Link>
               </li>
               <li>
-                <Link to="#" className=" text-[20px] text-white font-pixelFont">
+                <Link
+                  to="#"
+                  className=" nav-li-css h-full text-[20px] px-4  text-white font-pixelFont md:text-[23px] lg:text-[30px] transition-all hover:text-black "
+                >
                   services
                 </Link>
               </li>
               <li>
-                <Link to="#" className=" text-[20px] text-white font-pixelFont">
+                <Link
+                  to="#"
+                  className=" nav-li-css h-full text-[20px] px-4  text-white font-pixelFont md:text-[23px] lg:text-[30px] transition-all hover:text-black "
+                >
                   project
                 </Link>
               </li>
               <li>
-                <Link to="#" className="bg-red-600 text-[20px] text-white font-pixelFont">
+                <Link
+                  to="#"
+                  className=" text-[20px] h-full px-2 text-white font-pixelFont bg-lightBrandColor hover:text-black md:text-[23px] lg:text-[30px]"
+                >
                   contact
                 </Link>
               </li>
             </ul>
           </div>
-
           <div className="md:hidden">
             <button
               className="cursor-pointer outline-none mobile-menu-button"
@@ -59,7 +73,7 @@ const Nav = () => {
             <li>
               <Link
                 to="#"
-                className="block px-4 py-2 text-[30px] text-white font-pixelFont bg-primaryColor rounded nav-custom-shadow"
+                className=" block px-4 py-2 text-[30px] w-full text-white font-pixelFont bg-primaryColor rounded nav-custom-shadow active:bg-lightBrandColor"
               >
                 home
               </Link>
@@ -67,7 +81,7 @@ const Nav = () => {
             <li>
               <Link
                 to="#"
-                className="block px-4 py-2 text-[30px] text-white font-pixelFont bg-primaryColor rounded nav-custom-shadow"
+                className="block px-4 py-2 text-[30px] w-full text-white font-pixelFont bg-primaryColor rounded nav-custom-shadow active:bg-lightBrandColor"
               >
                 about
               </Link>
@@ -75,7 +89,7 @@ const Nav = () => {
             <li>
               <Link
                 to="#"
-                className="block px-4 py-2 text-[30px] text-white font-pixelFont bg-primaryColor rounded nav-custom-shadow"
+                className="block px-4 py-2 text-[30px] w-full text-white font-pixelFont bg-primaryColor rounded nav-custom-shadow active:bg-lightBrandColor"
               >
                 services
               </Link>
@@ -83,7 +97,7 @@ const Nav = () => {
             <li>
               <Link
                 to="#"
-                className="block px-4 py-2 text-[30px] text-white font-pixelFont bg-primaryColor rounded nav-custom-shadow"
+                className="block px-4 py-2 text-[30px] w-full text-white font-pixelFont bg-primaryColor rounded nav-custom-shadow active:bg-lightBrandColor"
               >
                 demo
               </Link>
@@ -91,7 +105,7 @@ const Nav = () => {
             <li>
               <Link
                 to="#"
-                className="bg-red-600 block px-4 py-2 text-[30px] font-pixelFont text-white  rounded  "
+                className="bg-red-600 block w-full px-4 py-2 text-[30px] font-pixelFont text-white  rounded  active:bg-primaryColor transition-all hover:text-black "
               >
                 contact
               </Link>

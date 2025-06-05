@@ -13,6 +13,11 @@
   --font-pixelFont:  "Pixelify Sans", sans-serif;
 }
 
+
+a{
+  display: inline-block;
+}
+
 .con {
   color: #0f0e0e;
 }
@@ -24,4 +29,25 @@ body {
 
 .nav-custom-shadow{
   box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+
+.nav-li-css {
+  position: relative;
+}
+
+.nav-li-css::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+
+  left: 0;
+  background-color: #fe0000;
+  transition: all linear 0.15s;
+  z-index: -10;
+}
+
+.nav-li-css:hover::after {
+  width: 100%; 
 }
