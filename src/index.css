@@ -53,6 +53,6 @@ body {
 }
 
 .banner-parallax{
-  background: url("/public/banner-background.png") no-repeat fixed center / cover;
+  background: url("/public/banner-image.png") no-repeat fixed center / cover;
   height: 93dvh;
 }

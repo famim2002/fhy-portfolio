@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 
-const phrases = ["fhy", "web", "fhy", "react"];
+const phrases = ["fhy","web","fhy", "React"];
 
 class TextScramble {
   constructor(el) {
@@ -83,11 +83,11 @@ const TextScrambleComponent = () => {
   }, []);
 
   return (
-    <div className="flex items-center justify-center  ">
+    <div className="flex items-center justify-center ">
       <div
         ref={textRef}
-        className="text-[38px] md:text-[23px] text-[#fafafa] font-light font-pixelFont"
-     
+        className="text-[28px] text-[#fafafa] font-light font-pixelFont"
+        
       ></div>
     </div>
   );
