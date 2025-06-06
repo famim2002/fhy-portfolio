@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 const Typewriter = () => {
-  const words = ["famim hayat", "web-developer", "react-developer", "next.js-developer"];
+  const words = ["famim hayat", "a web-developer", "a react-developer"];
   const [text, setText] = useState("");
   const [wordIndex, setWordIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
@@ -30,12 +30,12 @@ const Typewriter = () => {
   }, [charIndex, isDeleting, wordIndex]);
 
   return (
-    <div className="h-screen  flex flex-col justify-center">
+    <div className=" h-[500px] flex  items-center">
       <h1
-        className="text-[9vmin] text-lightBrandColor text-left  font-pixelFont ml-8 my-4"
+        className="text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-lightBrandColor text-left  font-pixelFont ml-8 my-4"
         aria-label="Hi! I'm a developer"
       >
-        Hi! I'm a&nbsp;
+        Hi! I'm<br/>&nbsp;
         <span className="relative after:content-['|'] after:animate-pulse">
           {text}
         </span>

@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
   return (
-      <section className='px-2'>
+      <section className='px-2 banner-custom-height'>
           <div className="container">
               <div>
                   

@@ -56,3 +56,12 @@ body {
   background: url("/public/banner-image.png") no-repeat fixed center / cover;
   height: 93dvh;
 }
+
+
+.banner-custom-shadow{
+  box-shadow: inset 0px -21px 29px 0px rgba(235, 6, 6, 0.346),0px 22px 18px -6px rgba(236, 8, 8, 0.337);
+}
+
+.banner-custom-height{
+ height: 92dvh !important;
+}
