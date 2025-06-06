@@ -1,17 +1,19 @@
-import React from 'react'
-import ScrambleText from './ScrambleText'
-import TextScrambleComponent from './ScrambleText'
+import React from "react";
+
+import Typewriter from "./BannerTextAnimation"
 
 const Banner = () => {
   return (
     <>
       <section className="banner-parallax">
-        <TextScrambleComponent/>
+        <div className="container">
+          <div>
+            <Typewriter/>
+          </div>
+        </div>
       </section>
-      
-        
     </>
   );
-}
+};
 
 export default Banner;
