@@ -13,7 +13,7 @@ const Nav = () => {
           <div className="text-white font-bold text-xl">
             <a href="#">Logo</a>
           </div>
-        
+
           <div className="hidden md:block">
             <ul className="flex items-center md:gap-4 lg:gap-6 xl:gap-10 ">
               <li className=" cursor pointer">
@@ -73,7 +73,7 @@ const Nav = () => {
             <li>
               <Link
                 to="/"
-                className=" block px-4 py-2 text-[30px] w-full text-white font-pixelFont bg-primaryColor rounded nav-custom-shadow active:bg-lightBrandColor"
+                className=" block px-4 py-2 text-[30px] w-full text-white font-pixelFont  bg-primaryColor rounded nav-custom-shadow active:bg-lightBrandColor focus:text-lightBrandColor"
               >
                 home
               </Link>
@@ -81,7 +81,7 @@ const Nav = () => {
             <li>
               <Link
                 to="/about"
-                className="block px-4 py-2 text-[30px] w-full text-white font-pixelFont bg-primaryColor rounded nav-custom-shadow active:bg-lightBrandColor"
+                className="block px-4 py-2 text-[30px] w-full text-white font-pixelFont bg-primaryColor rounded nav-custom-shadow active:bg-lightBrandColor focus:text-lightBrandColor"
               >
                 about
               </Link>
@@ -89,7 +89,7 @@ const Nav = () => {
             <li>
               <Link
                 to="/service"
-                className="block px-4 py-2 text-[30px] w-full text-white font-pixelFont bg-primaryColor rounded nav-custom-shadow active:bg-lightBrandColor"
+                className="block px-4 py-2 text-[30px] w-full text-white font-pixelFont bg-primaryColor rounded nav-custom-shadow active:bg-lightBrandColor focus:text-lightBrandColor"
               >
                 services
               </Link>
@@ -97,7 +97,7 @@ const Nav = () => {
             <li>
               <Link
                 to="/projects"
-                className="block px-4 py-2 text-[30px] w-full text-white font-pixelFont bg-primaryColor rounded nav-custom-shadow active:bg-lightBrandColor"
+                className="block px-4 py-2 text-[30px] w-full text-white font-pixelFont bg-primaryColor rounded nav-custom-shadow active:bg-lightBrandColor focus:text-lightBrandColor"
               >
                 demo
               </Link>
