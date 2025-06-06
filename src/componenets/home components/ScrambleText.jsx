@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 
-const phrases = [" famim  hayat", " Javascript", " React", " web - developer"];
+const phrases = ["fhy", "web", "fhy", "react"];
 
 class TextScramble {
   constructor(el) {
@@ -65,7 +65,7 @@ class TextScramble {
   }
 }
 
-const ScrambleText = () => {
+const TextScrambleComponent = () => {
   const textRef = useRef(null);
 
   useEffect(() => {
@@ -74,7 +74,7 @@ const ScrambleText = () => {
 
     const next = () => {
       fx.setText(phrases[counter]).then(() => {
-        setTimeout(next, 1500);
+        setTimeout(next, 800);
       });
       counter = (counter + 1) % phrases.length;
     };
@@ -83,14 +83,14 @@ const ScrambleText = () => {
   }, []);
 
   return (
-    <div className="h-dvh flex items-center  gap-5 ">
-      <h1 className="text-[80px] text-white font-pixelFont">I'm</h1>
+    <div className="flex items-center justify-center  ">
       <div
         ref={textRef}
-        className="flex items-center text-[80px] text-[#fafafa] font-light font-pixelFont"
+        className="text-[38px] md:text-[23px] text-[#fafafa] font-light font-pixelFont"
+     
       ></div>
     </div>
   );
 };
 
-export default ScrambleText;
+export default TextScrambleComponent;

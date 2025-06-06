@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { PiDotsThreeOutlineFill } from "react-icons/pi";
 import { Link } from "react-router"
+import TextScrambleComponent from "../componenets/home components/ScrambleText"
 
 
 const Nav = () => {
@@ -11,7 +12,7 @@ const Nav = () => {
       <nav className=" mx-auto px-6 py-3">
         <div className="flex items-center justify-between">
           <div className="text-white font-bold text-xl">
-            <a href="#">Logo</a>
+           <Link to="/"><TextScrambleComponent/></Link>
           </div>
 
           <div className="hidden md:block">
