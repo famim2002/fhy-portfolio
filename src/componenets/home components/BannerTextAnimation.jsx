@@ -30,7 +30,7 @@ const Typewriter = () => {
   }, [charIndex, isDeleting, wordIndex]);
 
   return (
-    <div className=" h-[500px] flex  items-center">
+    <div className="  flex  items-center">
       <h1
         className=" text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-lightBrandColor text-left  font-pixelFont ml-8 my-4"
         aria-label="Hi! I'm a developer"
