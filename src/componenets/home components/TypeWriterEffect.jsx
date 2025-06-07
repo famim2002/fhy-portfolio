@@ -50,15 +50,15 @@ const TypeWriterEffect = () => {
   return (
     <div className="lg:h-screen flex flex-col justify-center">
       <h1
-        className="text-[clamp(1.2rem,8vw,2rem)] xl:text-5xl 2xl:text-6xl text-red-600 text-left font-bold font-pixelFont ml-8 my-4"
+        className="text-[clamp(1.2rem,8vw,2rem)] text-center xl:text-5xl 2xl:text-6xl text-red-600 lg:text-left font-bold font-pixelFont ml-8 my-4"
         aria-label="Hi! I'm a developer"
       >
-        <span className="block 2xl:inline text-center lg:text-left">
+        <span className="block sm:inline  lg:block 2xl:inline">
           Hi! I'm&nbsp;
         </span>
         <span
           aria-live="polite"
-          className=" inline text-center relative pr-1 after:content-['|'] after:animate-pulse after:absolute after:right-0 after:top-0"
+          className=" inline  relative pr-1 after:content-['|'] after:animate-pulse after:absolute after:right-0 after:top-0"
         >
           {text}
         </span>
