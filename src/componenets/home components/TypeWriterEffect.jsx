@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 const TypeWriterEffect = () => {
-  const words = ["developer", "writer", "reader", "human"];
+  const words = ["famim hayat", "a web-developer", "a react-developer"];
   const [text, setText] = useState("");
   const [wordIndex, setWordIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
@@ -10,51 +10,56 @@ const TypeWriterEffect = () => {
 
   useEffect(() => {
     const currentWord = words[wordIndex];
+    const typingSpeed = isDeleting ? 50 : 120;
+
+    let timeout;
 
     if (delayAfterFullWord) {
-      const pause = setTimeout(() => {
+      timeout = setTimeout(() => {
         setIsDeleting(true);
         setDelayAfterFullWord(false);
       }, 1000);
-      return () => clearTimeout(pause);
-    }
+    } else {
+      timeout = setTimeout(() => {
+        if (!isDeleting) {
+          if (charIndex < currentWord.length) {
+            const nextIndex = charIndex + 1;
+            setCharIndex(nextIndex);
+            setText(currentWord.substring(0, nextIndex));
 
-    const typingSpeed = isDeleting ? 50 : 120;
-
-    const timeout = setTimeout(() => {
-      if (!isDeleting) {
-        setCharIndex((prev) => {
-          const next = prev + 1;
-          if (next === currentWord.length) {
-            setDelayAfterFullWord(true);
+            if (nextIndex === currentWord.length) {
+              setDelayAfterFullWord(true); // Trigger pause *after* full word typed
+            }
           }
-          return next;
-        });
-      } else {
-        setCharIndex((prev) => {
-          const next = prev - 1;
-          if (next === 0) {
+        } else {
+          if (charIndex > 0) {
+            const nextIndex = charIndex - 1;
+            setCharIndex(nextIndex);
+            setText(currentWord.substring(0, nextIndex));
+          } else {
             setIsDeleting(false);
-            setWordIndex((prevIndex) => (prevIndex + 1) % words.length);
+            setWordIndex((prev) => (prev + 1) % words.length);
           }
-          return next;
-        });
-      }
-
-      setText(currentWord.substring(0, charIndex));
-    }, typingSpeed);
+        }
+      }, typingSpeed);
+    }
 
     return () => clearTimeout(timeout);
   }, [charIndex, isDeleting, wordIndex, delayAfterFullWord]);
 
   return (
-    <div className="bg-[#182028] h-screen flex flex-col justify-center">
+    <div className="lg:h-screen flex flex-col justify-center">
       <h1
-        className="text-[9vmin] text-red-600 text-left font-bold font-[Lato] ml-8 my-4"
+        className="text-[clamp(1.2rem,8vw,2rem)] xl:text-5xl 2xl:text-6xl text-red-600 text-left font-bold font-pixelFont ml-8 my-4"
         aria-label="Hi! I'm a developer"
       >
-        Hi! I'm a&nbsp;
-        <span className="relative after:content-['|'] after:animate-pulse">
+        <span className="block 2xl:inline text-center lg:text-left">
+          Hi! I'm&nbsp;
+        </span>
+        <span
+          aria-live="polite"
+          className=" inline text-center relative pr-1 after:content-['|'] after:animate-pulse after:absolute after:right-0 after:top-0"
+        >
           {text}
         </span>
       </h1>

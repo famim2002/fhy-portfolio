@@ -10,11 +10,10 @@
   --color-brandColor: #b31312;
   --color-lightBrandColor: #fe0000;
 
-  --font-pixelFont:  "Pixelify Sans", sans-serif;
+  --font-pixelFont: "Pixelify Sans", sans-serif;
 }
 
-
-a{
+a {
   display: inline-block;
 }
 
@@ -26,11 +25,10 @@ body {
   background-color: #090909;
 }
 
-
-.nav-custom-shadow{
-  box-shadow: rgb(0, 0, 0) 0px 2px 4px, rgba(0, 0, 0, 0.666) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+.nav-custom-shadow {
+  box-shadow: rgb(0, 0, 0) 0px 2px 4px, rgba(0, 0, 0, 0.666) 0px 7px 13px -3px,
+    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
-
 
 .nav-li-css {
   position: relative;
@@ -49,16 +47,15 @@ body {
 }
 
 .nav-li-css:hover::after {
-  width: 100%; 
+  width: 100%;
 }
 
-
-
-.banner-custom-shadow{
-  box-shadow: inset 0px -21px 29px 0px rgba(235, 6, 6, 0.346),0px 22px 18px -6px rgba(236, 8, 8, 0.337);
+.banner-custom-shadow {
+  box-shadow: inset 0px -21px 29px 0px rgba(235, 6, 6, 0.346),
+    10px 22px -10px 20px rgba(211, 7, 7, 0.507);
 }
 
-.banner-custom-height{
+.banner-custom-height {
   height: calc(100dvh - 100px);
   margin: auto;
   line-height: 93dvh;
