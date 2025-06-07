@@ -48,9 +48,9 @@ const TypeWriterEffect = () => {
   }, [charIndex, isDeleting, wordIndex, delayAfterFullWord]);
 
   return (
-    <div className="lg:h-screen flex flex-col justify-center">
+    <div className=" flex flex-col justify-center">
       <h1
-        className="text-[clamp(1.2rem,8vw,2rem)] text-center xl:text-5xl 2xl:text-6xl text-red-600 lg:text-left font-bold font-pixelFont ml-8 my-4"
+        className="text-[clamp(1.5rem,8vw,2rem)] text-center md:text-5xl lg:text-[clamp(1.2rem,8vw,2rem)]  xl:text-5xl 2xl:text-6xl text-red-600 lg:text-left font-bold font-pixelFont ml-8 my-4"
         aria-label="Hi! I'm a developer"
       >
         <span className="block sm:inline  lg:block 2xl:inline">

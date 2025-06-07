@@ -1,6 +1,7 @@
 import React from "react";
-import TypeWriterEffect from "./TypeWriterEffect"
+import TypeWriterEffect from "./TypeWriterEffect";
 
+import SocialBar from "./SocialBar"
 
 const Banner = () => {
   return (
@@ -11,17 +12,22 @@ const Banner = () => {
             className="flex flex-col justify-between 
                        lg:flex-row  gap-5"
           >
-            <div className=" pt-20 sm:pt-0 ">
-             
-              <TypeWriterEffect />
+            <div className="lg:h-dvh  flex flex-col gap-10 justify-center">
+              <div className=" pt-20 lg:pt-0 ">
+                <TypeWriterEffect />
+              </div>
+              <div className="mx-auto lg:mx-0 mt-10">
+                <SocialBar/>
+              </div>
             </div>
+
             <div
               className="flex justify-center lg:justify-end items-center pt-[20px] 
                          md:pt-[86px] lg:rounded-full overflow-hidden "
             >
               <img
                 className=" max-w-[600px]  lg:rounded-full border-b-6 banner-custom-shadow border-b-red-500 "
-                src="/banner.png"
+                src="/banner-back.jpg"
                 alt="model_image"
               />
             </div>
