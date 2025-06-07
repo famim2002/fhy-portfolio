@@ -32,10 +32,10 @@ const Typewriter = () => {
   return (
     <div className=" h-[500px] flex  items-center">
       <h1
-        className="text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-lightBrandColor text-left  font-pixelFont ml-8 my-4"
+        className=" text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-lightBrandColor text-left  font-pixelFont ml-8 my-4"
         aria-label="Hi! I'm a developer"
       >
-        Hi! I'm<br/>&nbsp;
+        Hi !,  I'm<br/>&nbsp;
         <span className="relative after:content-['|'] after:animate-pulse">
           {text}
         </span>
